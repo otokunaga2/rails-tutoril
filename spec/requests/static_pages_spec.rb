@@ -7,16 +7,19 @@ RSpec.describe "StaticPages", type: :request do
   #    expect(response).to have_http_status(200)
   #  end
   #end
+  let(:title_string) {'Ruby on Rails Tutorial Sample App'}
+ruby on rails tutorial sample app 
+
   describe "Home page" do
     it "should have the conent 'Sample App'" do
       visit '/static_pages/home'
-      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Home")
+      expect(page).to have_title("#{title_string}| home")
     end
   end
   describe "Help page" do
     it "should have the conent 'Help'" do
       visit '/static_pages/help'
-      expect(page).to have_title("Ruby on Rails Tutorial Sample App | Help")
+      expect(page).to have_title("| Help")
     end
   end
   describe "About page" do
@@ -29,6 +32,12 @@ RSpec.describe "StaticPages", type: :request do
       visit '/static_pages/about'
       expect(page).to have_title("Ruby on Rails Tutorial Sample App | About Us")
 
+    end
+  end
+  describe "Contact page" do
+    it "should have the ceontent 'Contact'" do
+       visit '/static_pages/contact'
+       expect(page).to have_title("Ruby on Rails Tutorial Sample App | Contact")
     end
   end
 end
