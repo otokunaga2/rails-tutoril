@@ -8,7 +8,6 @@ RSpec.describe "StaticPages", type: :request do
   #  end
   #end
   let(:title_string) {'Ruby on Rails Tutorial Sample App'}
-ruby on rails tutorial sample app 
 
   describe "Home page" do
     it "should have the conent 'Sample App'" do
