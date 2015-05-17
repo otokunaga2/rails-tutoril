@@ -1,0 +1,9 @@
+/usr/bin/ruby -r ./siteconf20150514-1035-15gk65x.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: 'all' に対して行うべき事はありません.
+
+make "DESTDIR=" install

@@ -12,6 +12,7 @@ end
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'factory_girl_rails', '4.2.1'
 end
 gem 'bcrypt-ruby','3.1.2'
 # Use SCSS for stylesheets
@@ -40,6 +41,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'bootstrap-sass', '~> 2.3.1.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

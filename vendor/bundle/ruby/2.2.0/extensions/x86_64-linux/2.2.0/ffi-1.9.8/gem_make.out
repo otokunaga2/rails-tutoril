@@ -1,0 +1,44 @@
+/usr/bin/ruby -r ./siteconf20150514-1035-i1c4sj.rb extconf.rb 
+checking for ffi_call() in -lffi... yes
+checking for ffi_prep_closure()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for ffi_prep_cif_var()... yes
+creating extconf.h
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling MethodHandle.c
+compiling ffi.c
+compiling Variadic.c
+compiling Types.c
+compiling ArrayType.c
+compiling StructByValue.c
+compiling StructLayout.c
+compiling MappedType.c
+compiling StructByReference.c
+compiling FunctionInfo.c
+compiling LongDouble.c
+compiling LastError.c
+compiling Pointer.c
+compiling ClosurePool.c
+compiling Function.c
+compiling MemoryPointer.c
+compiling DataConverter.c
+compiling AbstractMemory.c
+compiling Struct.c
+compiling Call.c
+compiling DynamicLibrary.c
+compiling Thread.c
+compiling Platform.c
+compiling Buffer.c
+compiling Type.c
+linking shared-object ffi_c.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20150514-1035-awh3bm

@@ -1,0 +1,16 @@
+/usr/bin/ruby -r ./siteconf20150514-1035-17vgo7.rb extconf.rb 
+checking for ruby/util.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling wrapper.c
+compiling crypt_gensalt.c
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+linking shared-object bcrypt_ext.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20150514-1035-816c1n
