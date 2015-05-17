@@ -1,0 +1,26 @@
+20150517 done
+  リスト7.25 エラーメッセージにスタイルを与えるためのCSS。
+  app/assets/stylesheets/custom.css.scss
+  .
+  .
+  .
+  
+  /* forms */
+  .
+  .
+  .
+  #error_explanation {
+    color: #f00;
+      ul {
+            list-style: none;
+                margin: 0 0 18px 0;
+                  }
+  }
+  
+  .field_with_errors {
+      @extend .control-group;
+        @extend .error;
+  }
+memo
+  値を入力してないとvalidationエラーが起こるようには設定している。
+  画面のようにはいかなかったが。。。
